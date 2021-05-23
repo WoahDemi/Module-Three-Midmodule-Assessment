@@ -9,6 +9,9 @@ class App extends Component {
 
   addItem = (item) =>{
     this.setState((prevState) => {
+      // this.setState(prevState,prevProps) has to return what the state is going to be 
+      // prevState is always an object
+      // used to update values that are dependent on current state
       return {cart:[item, ...prevState.cart]}
     })
   }

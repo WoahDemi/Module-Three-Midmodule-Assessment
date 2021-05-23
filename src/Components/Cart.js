@@ -10,9 +10,9 @@ return(
     return <li>{name}: ${price}</li>
 })}
         </ul>
-        <h3>Subtotal: {subtotal.toFixed(2)} </h3>
-        <h3>Tax: {tax.toFixed(2)} </h3>
-        <h3>Total: {(tax + subtotal).toFixed(2)}</h3>
+        <h3>Subtotal: ${subtotal.toFixed(2)} </h3>
+        <h3>Tax: ${tax.toFixed(2)} </h3>
+        <h3>Total: ${(tax + subtotal).toFixed(2)}</h3>
     </section>
 )
 }
