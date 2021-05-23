@@ -13,7 +13,6 @@ class CheckoutForm extends Component {
     e.preventDefault();
     const { first, last, email, card, zip } = this.state;
     const {total} = this.props
-    debugger
     if (!first || !last || !email || !card || !zip) {
       window.alert("Input is not valid");
     }else if(card.length !== 16){
@@ -22,17 +21,14 @@ class CheckoutForm extends Component {
         window.alert(`Zip code is not valid`)
     }
     else{
-      debugger
        window.alert (`Purchase complete. Your total is $${total}`)
     }
-    // debugger;
   };
 
 
   handleChange = (e) => {
     const { name, value } = e.target;
     this.setState({ [name]: value });
-    debugger
   };
 
  

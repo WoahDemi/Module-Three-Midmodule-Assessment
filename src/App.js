@@ -16,7 +16,6 @@ class App extends Component {
     })
   }
   render() {
-    console.log(this.state.cart)
     let subtotal = 0
     this.state.cart.forEach(item => subtotal += item.price)
     let tax = subtotal * .05
